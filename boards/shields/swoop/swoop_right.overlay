@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2023 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "swoop.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 4 GPIO_ACTIVE_HIGH>   // D4
+        , <&gpio0 0 GPIO_ACTIVE_HIGH>   // D0
+        , <&gpio0 1 GPIO_ACTIVE_HIGH>   // D1
+        , <&gpio0 27 GPIO_ACTIVE_HIGH>  // D8
+        , <&gpio0 28 GPIO_ACTIVE_HIGH>  // D9
+        , <&gpio0 29 GPIO_ACTIVE_HIGH>  // D10
+        ;
+};
